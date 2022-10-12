@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+    <body style="background-color: coral;">
+      
+      <h1>Expense Tracker App</h1>
+      <br>
+        <form  onsubmit="saveToLocalStorage(event)">
+          <div>
+            <label> Choose Expense Amount </label>
+            <select id='username' type="text" name="username"  required>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="morethan500">>500</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label> Expense Description </label>
+            <input id='desc' type="text" name="emailId"  required/>
+          </div>
+          <br>
+          <div>
+            <label> Choose Expense Category </label>
+            <select id='Category' type="tel" name="Category" required>
+                <option value="movie">Movie</option>
+                <option value="shopping">Shopping</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Others">Others</option>
+            </select>
+          </div>
+          <br>
+            <button> Add Expense </button>
+        </form>
+       
+        
+        <h2 style="color:Blue">List of Expenses</h2>
+        <ul id='listOfUsers'></ul>
+        <script src="main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js"></script>
+    </body>
+</html>
